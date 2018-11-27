@@ -14,6 +14,7 @@ module.exports = function supine ({ dir = '.', port = 8888, create = false, open
 
   maybeCreate(dir, create, (err) => {
     if (err) {
+      debug.error(err);
       console.error(err);
       process.exit(42);
     }

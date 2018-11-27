@@ -1,8 +1,9 @@
 
 # TODO
-- [ ] build basic microbundle + preact + cssn setup
+- [x] build basic microbundle + preact + cssn setup
 - [ ] home component
 - [ ] basic style for layout
+- [ ] favicon
 - [ ] API endpoint to load supine tree
 - [ ] API endpoint to save supine tree
 - [ ] API to load files from the served area

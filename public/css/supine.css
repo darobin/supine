@@ -2,6 +2,16 @@
 /* XXX: here is the source, we minify right next to it */
 @import "normalize.css";
 
-/* XXX:
-  - use cssn as a library, have it notify of changes so that we can SSE them and reload the style
- */
+@font-face {
+  font-family: "Anivers";
+  src: url("AniversRegular.otf") format("opentype");
+}
+
+/* Header part */
+body > div > header {
+  font-family: Anivers, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  background: #f42409;
+  color: #fff;
+}
