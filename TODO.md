@@ -1,7 +1,39 @@
 
 # TODO
-- [ ] `supine` bin
-  - [ ] dir to serve
-  - [ ] option to create
-  - [ ] pick port automatically
-  - [ ] option to open in browser
+- [ ] build basic microbundle + preact + cssn setup
+- [ ] home component
+- [ ] basic style for layout
+- [ ] API endpoint to load supine tree
+- [ ] API endpoint to save supine tree
+- [ ] API to load files from the served area
+- [ ] router, hash based
+- [ ] tree component
+  - [ ] store with load and save
+  - [ ] render tree
+  - [ ] edit title (text for now, we'll make HTML later)
+  - [ ] add child, after, before
+  - [ ] delete item (and children), with confirmation
+  - [ ] move (maybe pick source/target rather than drag?)
+  - [ ] select current, tell router
+- [ ] edit component
+  - [ ] set up Quill the way I want
+  - [ ] load when told to
+  - [ ] autosave
+  - [ ] images
+  - [ ]
+  - [ ]
+- [ ] notes component
+  - [ ] list of notes to load
+  - [ ] create file if not there
+  - [ ] check/uncheck with style
+  - [ ] reorder
+  - [ ] mini editor for each
+  - [ ] add after/before
+- [ ] status component
+  - [ ] listen to SSE
+  - [ ] show errors
+  - [ ] show git status
+  - [ ] make sure git is always up to date
+  - [ ] render grey if SSE says no .git
+  - [ ] textarea+button for commit messages
+  - [ ] git add and git remove must be automatic
