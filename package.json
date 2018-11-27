@@ -1,0 +1,55 @@
+{
+  "name": "supine",
+  "version": "0.0.1",
+  "description": "A writing implement",
+  "main": "index.js",
+  "bin": {
+    "supine": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "npm run build-css && npm run build-js",
+    "watch": "npm run watch-css & npm run watch-js",
+    "build-css": "NODE_ENV=production cssn public/css/supine.css public/css/supine.min.css",
+    "watch-css": "cssn --watch public/css/supine.css public/css/supine.min.css",
+    "build-js": "microbundle build --external all --entry public/js/supine.js --output public/js/supine.min.js --format cjs",
+    "watch-js": "microbundle watch --external all --entry public/js/supine.js --output public/js/supine.min.js --format cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darobin/supine.git"
+  },
+  "eslintConfig": {
+    "extends": "robin",
+    "rules": {
+      "react/react-in-jsx-scope": 0,
+      "import/extensions": 0,
+      "react/prop-types": 0,
+      "react/no-unknown-property": 0,
+      "jsx-a11y/label-has-for": 0
+    }
+  },
+  "author": "Robin Berjon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darobin/supine/issues"
+  },
+  "homepage": "https://github.com/darobin/supine#readme",
+  "devDependencies": {
+    "cssn": "^3.1.0",
+    "eslint-config-robin": "^4.1.1",
+    "microbundle": "^0.7.0",
+    "normalize.css": "^8.0.1",
+    "preact": "^8.3.1",
+    "preact-router": "^2.6.1",
+    "unistore": "^3.1.0"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "commander": "^2.19.0",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "get-port": "^4.0.0",
+    "sse-channel": "^3.1.1"
+  }
+}

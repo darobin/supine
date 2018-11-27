@@ -1,2 +1,4 @@
-# supine
-Playing with an editor
+
+# Supine
+
+I like my own kind of editor
