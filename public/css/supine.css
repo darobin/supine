@@ -1,17 +1,25 @@
 
-/* XXX: here is the source, we minify right next to it */
 @import "normalize.css";
 
 @font-face {
-  font-family: "Anivers";
-  src: url("AniversRegular.otf") format("opentype");
+  font-family: "Bank Gothic";
+  src: url("bank-gothic.woff") format("woff");
+}
+
+:root {
+  --bg: #321;
+  --contrast: #ffb635;
 }
 
 /* Header part */
 body > div > header {
-  font-family: Anivers, sans-serif;
+  font-family: "Bank Gothic";
   font-weight: bold;
-  font-size: 2rem;
-  background: #f42409;
-  color: #fff;
+  font-size: 1rem;
+  background: var(--bg);
+  color: var(--contrast);
+}
+body > div > header > p {
+  margin: 0;
+  padding-left: 0.6rem;
 }

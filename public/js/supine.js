@@ -6,7 +6,7 @@ window.onload = () => render(
   (
     <div>
       <header>
-        <p>Supine</p>
+        <p>supine</p>
       </header>
     </div>
   ),
