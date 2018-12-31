@@ -3,6 +3,7 @@ let { isAbsolute, join } = require('path')
   , { access, constants: { W_OK }, mkdir, writeFile } = require('fs')
   , { series, parallel } = require('async')
   , opn = require('opn')
+  , shortid = require('shortid')
   , debug = require('debug')('supine')
   , server = require('./lib/server')
   , makeErrorReporter = require('./lib/error-reporter')
@@ -47,6 +48,7 @@ function maybeCreate (dir, create, cb) {
         access(conf, W_OK, (err) => {
           if (err) {
             let defaultConfiguration = {
+                  id:       shortid(),
                   title:    'As Yet Untitled Opus',
                   path:     'index.html',
                   children: [],

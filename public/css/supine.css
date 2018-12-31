@@ -8,9 +8,10 @@
 }
 
 :root {
-  --bg: #321;
+  --bg: #111;
   --contrast: #ffb635;
   --handle: #f4f4f4;
+  --ctx-pane-bg: #ebebec;
 }
 
 body > div {

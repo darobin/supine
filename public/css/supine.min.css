@@ -366,9 +366,10 @@ template {
 }
 
 :root {
-  --bg: #321;
+  --bg: #111;
   --contrast: #ffb635;
   --handle: #f4f4f4;
+  --ctx-pane-bg: #ebebec;
 }
 
 body > div {
@@ -383,7 +384,7 @@ body > div > header {
   font-family: "Bank Gothic";
   font-weight: bold;
   font-size: 1rem;
-  background: #321;
+  background: #111;
   background: var(--bg);
   color: #ffb635;
   color: var(--contrast);

@@ -2,6 +2,7 @@
 // import { Router } from 'preact-router';
 import { h, render } from 'preact';
 import { HorizontalContainer, Pane } from './components/containers';
+import BookTree from './components/tree';
 
 window.onload = () => render(
   (
@@ -12,7 +13,7 @@ window.onload = () => render(
       <main>
         <HorizontalContainer>
           <Pane width="350px" resizeHandle="right">
-            <div style={{ background: '#ebebec', height: '100%' }}>ohai</div>
+            <BookTree/>
           </Pane>
           <Pane grow="1">
             <div style={{ height: '100%' }}>…</div>

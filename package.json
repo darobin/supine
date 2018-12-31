@@ -51,6 +51,7 @@
     "preact": "^8.4.2",
     "preact-compat": "^3.18.4",
     "preact-router": "^2.6.1",
+    "shortid": "^2.2.14",
     "sse-channel": "^3.1.1",
     "unistore": "^3.1.0"
   }
