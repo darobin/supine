@@ -46,11 +46,12 @@
     "debug": "^4.1.0",
     "express": "^4.16.4",
     "get-port": "^4.0.0",
-    "opn": "^5.4.0",
-    "sse-channel": "^3.1.1",
     "normalize.css": "^8.0.1",
-    "preact": "^8.3.1",
+    "opn": "^5.4.0",
+    "preact": "^8.4.2",
+    "preact-compat": "^3.18.4",
     "preact-router": "^2.6.1",
+    "sse-channel": "^3.1.1",
     "unistore": "^3.1.0"
   }
 }
