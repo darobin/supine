@@ -349,6 +349,17 @@ template {
   display: none;
 }
 
+.container-pane {
+  height: 100%;
+  width: 100%;
+}
+
+.container-horizontal {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
 @font-face {
   font-family: "Bank Gothic";
   src: url("bank-gothic.woff") format("woff");
@@ -357,6 +368,13 @@ template {
 :root {
   --bg: #321;
   --contrast: #ffb635;
+  --handle: #f4f4f4;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /* Header part */
@@ -374,4 +392,10 @@ body > div > header {
 body > div > header > p {
   margin: 0;
   padding-left: 0.6rem;
+}
+
+/* main */
+
+body > div > main {
+  flex-grow: 1;
 }
