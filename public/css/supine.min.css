@@ -352,12 +352,33 @@ template {
 .container-pane {
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 
 .container-horizontal {
   display: flex;
   height: 100%;
   width: 100%;
+}
+
+.booktree-node {
+  background: #e8ecef;
+  background: var(--ctx-pane-bg);
+  height: 100%;
+  display: flex;
+}
+
+.booktree-node-chevron {
+  width: 1.2ch;
+  padding: 0 0.3rem 0 0.2rem;
+}
+
+.booktree-node-title_root {
+  font-weight: bold;
+}
+
+.booktree-node-icon {
+  display: none;
 }
 
 @font-face {
@@ -369,7 +390,7 @@ template {
   --bg: #111;
   --contrast: #ffb635;
   --handle: #f4f4f4;
-  --ctx-pane-bg: #ebebec;
+  --ctx-pane-bg: #e8ecef;
 }
 
 body > div {

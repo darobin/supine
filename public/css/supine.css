@@ -1,6 +1,7 @@
 
 @import "normalize.css";
 @import "./containers.css";
+@import "./tree.css";
 
 @font-face {
   font-family: "Bank Gothic";
@@ -11,7 +12,7 @@
   --bg: #111;
   --contrast: #ffb635;
   --handle: #f4f4f4;
-  --ctx-pane-bg: #ebebec;
+  --ctx-pane-bg: #e8ecef;
 }
 
 body > div {
